@@ -1,6 +1,10 @@
 import 'package:flutter/material.dart';
 
 class ShapePainter extends CustomPainter {
+  final double? sides;
+  final double? radius;
+  final double? radians;
+  ShapePainter(this.sides, this.radius, this.radians);
   @override
   void paint(Canvas canvas, Size size) {
     var paint = Paint()
@@ -15,7 +19,7 @@ class ShapePainter extends CustomPainter {
       ..strokeCap = StrokeCap.round;
 
     Offset startingPointHoraizontally = Offset(size.width / 2, size.height / 2);
-    Offset endingPointHoraizontally = Offset(size.width / 1.3, size.height / 2);
+    Offset endingPointHoraizontally = Offset(size.width / 1.6, size.height / 2);
     Offset startingPointVertically = Offset(size.width / 2, size.height / 2);
     Offset endingPointVertically = Offset(size.width / 2, size.height / 3.0);
 
