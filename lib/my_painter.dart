@@ -49,7 +49,7 @@ class _MyPainterState extends State<MyPainter> with TickerProviderStateMixin {
       body: Padding(
         padding: const EdgeInsets.all(8.0),
         child: CustomPaint(
-          painter: ShapePainter(sides, _radius, animation.value),
+          // painter: ShapePainter(sides, _radius, animation.value),
           child: Container(),
         ),
       ),
